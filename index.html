@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Formular</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <header class="jumbotron text-center bg-danger">
+                <h1 class="display-1 text-light">Čtverec / Krychle</h1>
+            </header>
+            <main class="container">
+                      
+                <div class="container">                 
+                    <form>
+                        <h3>Vyberte typ výpočtu pro čtverec</h3>
+                        <hr>
+                        <div class="form-group row">
+                                <div class="col-sm-9">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input"  type="radio" name="type" id="vObsah" value="obsah" checked> Obsah
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="type" id="vObvod" value="obvod"> Obvod
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="type" id="vUhlopricka" value="uhlopricka"> Úhlopříčka
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        <h3>Vyberte typ výpočtu pro krychli</h3>
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="type" id="vObjem" value="objem"> Objem
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="type" id="vPovrch" value="povrch"> Povrch
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="type" id="vTuhlopricka" value="tUhlopricka"> Tělesová Úhlopříčka
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group row">
+                            <label for="delkaStrany" class="col-sm-6 col-form-label">Zadejte délku strany</label>
+                            <div class="col-sm-3">
+                                <input type="number" class="form-control" name="strana" id="strana" value="10" min="0"/>
+                            </div>
+                            <div class="col-sm-3">
+                                <select class="form-control" name="jednotka" id="jednotka">
+                                    <option value="mm">mm</option>
+                                    <option value="cm">cm</option>
+                                    <option value="dm">dm</option>
+                                    <option value="m">m</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-sm-6 col-sm-6">
+                                <button type="button" id="vypocet" class="btn btn-danger">
+                                    Výpočet
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <hr />
+                    <div id="vysledek" class="display-4">Výsledek</div>
+                </div>
+            </main>
+            <footer class="container-fluid text-center mt-5">
+                <p>&copy; 2021 Jakub Knappe</p>
+            </footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
